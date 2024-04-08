@@ -1,4 +1,7 @@
 {
   "expoServerPort": 19000,
-  "packagerPort": 19000
+  "packagerPort": 8081,
+  "expoServerNgrokUrl": "https://78-f6i.cristovk.ombd.exp.direct",
+  "packagerNgrokUrl": "https://packager.78-f6i.cristovk.ombd.exp.direct",
+  "ngrokPid": 18496
 }
