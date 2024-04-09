@@ -1,21 +1,33 @@
-import { View, Text } from "tamagui";
+import { XGroup, ListItem, Separator } from "tamagui";
+import { Moon, Star, ChevronRight } from "@tamagui/lucide-icons";
 
 export const MenuBotton = () => {
   return (
-    <View
-      sx={{
-        bg: "#FFD1F5F8",
-        borderRadius: "8px",
-        display: "flex",
-        justifyContent: "space-between",
-        alignItems: "center",
-        height: "56px",
-        padding: "8px 16px",
-      }}
+    <XGroup
+      alignItems="center"
+      bordered
+      width={240}
+      size="$5"
+      separator={<Separator />}
     >
-      <Text sx={{ color: "#333", fontWeight: "bold" }}>Buscar</Text>
-      <Text sx={{ color: "#333", fontWeight: "bold" }}>Favorito</Text>
-    </View>
+      <XGroup.Item>
+        <ListItem
+          hoverTheme
+          pressTheme
+          title="Search"
+          icon={Moon}
+          iconAfter={ChevronRight}
+        />
+      </XGroup.Item>
+      <XGroup.Item>
+        <ListItem
+          hoverTheme
+          pressTheme
+          title="Favorites"
+          icon={Star}
+          iconAfter={ChevronRight}
+        />
+      </XGroup.Item>
+    </XGroup>
   );
 };
-
